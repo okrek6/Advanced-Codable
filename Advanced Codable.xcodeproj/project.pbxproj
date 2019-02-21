@@ -15,6 +15,14 @@
 		E2EA7CF7221DF189005C204E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EA7CF5221DF189005C204E /* LaunchScreen.storyboard */; };
 		E2EA7D02221DF189005C204E /* Advanced_CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D01221DF189005C204E /* Advanced_CodableTests.swift */; };
 		E2EA7D0D221DF189005C204E /* Advanced_CodableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D0C221DF189005C204E /* Advanced_CodableUITests.swift */; };
+		E2EA7D1E221DFAAA005C204E /* FoodLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D1D221DFAAA005C204E /* FoodLoader.swift */; };
+		E2EA7D20221DFABB005C204E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D1F221DFABB005C204E /* Food.swift */; };
+		E2EA7D22221DFACA005C204E /* Podcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D21221DFACA005C204E /* Podcasts.swift */; };
+		E2EA7D24221DFAEB005C204E /* PodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D23221DFAEB005C204E /* PodcastLoader.swift */; };
+		E2EA7D28221DFB50005C204E /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D27221DFB50005C204E /* PodcastTableViewCell.swift */; };
+		E2EA7D2A221DFB67005C204E /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA7D29221DFB67005C204E /* FoodTableViewCell.swift */; };
+		E2EA7D2C221E5290005C204E /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = E2EA7D2B221E5290005C204E /* food.json */; };
+		E2EA7D2E221E52C7005C204E /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = E2EA7D2D221E52C7005C204E /* podcasts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		E2EA7D08221DF189005C204E /* Advanced CodableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced CodableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EA7D0C221DF189005C204E /* Advanced_CodableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_CodableUITests.swift; sourceTree = "<group>"; };
 		E2EA7D0E221DF189005C204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EA7D1D221DFAAA005C204E /* FoodLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLoader.swift; sourceTree = "<group>"; };
+		E2EA7D1F221DFABB005C204E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		E2EA7D21221DFACA005C204E /* Podcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcasts.swift; sourceTree = "<group>"; };
+		E2EA7D23221DFAEB005C204E /* PodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastLoader.swift; sourceTree = "<group>"; };
+		E2EA7D27221DFB50005C204E /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
+		E2EA7D29221DFB67005C204E /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		E2EA7D2B221E5290005C204E /* food.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		E2EA7D2D221E52C7005C204E /* podcasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +115,10 @@
 		E2EA7CE8221DF187005C204E /* Advanced Codable */ = {
 			isa = PBXGroup;
 			children = (
+				E2EA7D1C221DFA15005C204E /* Controller */,
+				E2EA7D1B221DFA0F005C204E /* View */,
+				E2EA7D1A221DF982005C204E /* Model */,
 				E2EA7CE9221DF187005C204E /* AppDelegate.swift */,
-				E2EA7CEB221DF187005C204E /* ViewController.swift */,
 				E2EA7CED221DF187005C204E /* Main.storyboard */,
 				E2EA7CF3221DF189005C204E /* Assets.xcassets */,
 				E2EA7CF5221DF189005C204E /* LaunchScreen.storyboard */,
@@ -126,6 +144,44 @@
 				E2EA7D0E221DF189005C204E /* Info.plist */,
 			);
 			path = "Advanced CodableUITests";
+			sourceTree = "<group>";
+		};
+		E2EA7D1A221DF982005C204E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA7D2F221E52DE005C204E /* JSON */,
+				E2EA7D1D221DFAAA005C204E /* FoodLoader.swift */,
+				E2EA7D1F221DFABB005C204E /* Food.swift */,
+				E2EA7D21221DFACA005C204E /* Podcasts.swift */,
+				E2EA7D23221DFAEB005C204E /* PodcastLoader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2EA7D1B221DFA0F005C204E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA7D29221DFB67005C204E /* FoodTableViewCell.swift */,
+				E2EA7D27221DFB50005C204E /* PodcastTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2EA7D1C221DFA15005C204E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA7CEB221DF187005C204E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2EA7D2F221E52DE005C204E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA7D2B221E5290005C204E /* food.json */,
+				E2EA7D2D221E52C7005C204E /* podcasts.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA7CF7221DF189005C204E /* LaunchScreen.storyboard in Resources */,
+				E2EA7D2C221E5290005C204E /* food.json in Resources */,
+				E2EA7D2E221E52C7005C204E /* podcasts.json in Resources */,
 				E2EA7CF4221DF189005C204E /* Assets.xcassets in Resources */,
 				E2EA7CEF221DF187005C204E /* Main.storyboard in Resources */,
 			);
@@ -260,8 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA7CEC221DF187005C204E /* ViewController.swift in Sources */,
+				E2EA7D28221DFB50005C204E /* PodcastTableViewCell.swift in Sources */,
 				E2EA7CF2221DF187005C204E /* Advanced_Codable.xcdatamodeld in Sources */,
+				E2EA7D20221DFABB005C204E /* Food.swift in Sources */,
+				E2EA7D24221DFAEB005C204E /* PodcastLoader.swift in Sources */,
+				E2EA7D1E221DFAAA005C204E /* FoodLoader.swift in Sources */,
+				E2EA7D22221DFACA005C204E /* Podcasts.swift in Sources */,
 				E2EA7CEA221DF187005C204E /* AppDelegate.swift in Sources */,
+				E2EA7D2A221DFB67005C204E /* FoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
